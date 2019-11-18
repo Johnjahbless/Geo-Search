@@ -28,7 +28,7 @@ function showPosition(position) {
 }
 
 const GetWeatherData = (lat, lon) => {
-    fetch("http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&APPID=c7cd3d81c07d4766b537d3c72d2a1c40")
+    fetch("https://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&APPID=c7cd3d81c07d4766b537d3c72d2a1c40")
         .then(response => response.json())
         .then(data => {
 
@@ -134,7 +134,7 @@ $(document).ready(function(){
   {
   method: 'feed',
   name: myLocation,
-  link: 'http://geo-search.heroku.com',
+  link: 'https://geo-search.heroku.com',
   picture: img_url,
   caption: myLocation,
   description: "This is my current weather conditions",

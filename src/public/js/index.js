@@ -19,7 +19,7 @@ function showPosition(position) {
  // "<br>Longitude: " + position.coords.longitude;
   latlon = position.coords.latitude + "," + position.coords.longitude;
 
-  img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=12&size=1000x2000&scale=4&maptype=roadmap&markers=color:blue|label:Y|"+latlon+"&key=AIzaSyB-ynEemTzMxgwyh7Ev3xmK6Y4igV1d9hs";
+  img_url = "https://maps.googleapis.com/maps/api/staticmap?center="+latlon+"&zoom=12&size=1000x2000&scale=4&maptype=roadmap&markers=color:blue|label:Y|"+latlon+"&key=YOUR_API_KEY";
 
   //document.getElementById("map").innerHTML = "<img src='"+img_url+"'>";
   document.body.style.backgroundImage = "url('"+img_url+"')";
@@ -28,7 +28,7 @@ function showPosition(position) {
 }
 
 const GetWeatherData = (lat, lon) => {
-    fetch("http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&APPID=c7cd3d81c07d4766b537d3c72d2a1c40")
+    fetch("http://api.openweathermap.org/data/2.5/weather?lat="+lat+"&lon="+lon+"&APPID=YOUR_API_KEY")
         .then(response => response.json())
         .then(data => {
 

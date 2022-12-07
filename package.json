@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Johnjahbless/Geo-Search#readme",
   "dependencies": {
     "ejs": "^2.7.1",
-    "express": "^4.17.1"
+    "express": "^4.18.2"
   },
   "devDependencies": {
     "eslint": "^6.6.0",
